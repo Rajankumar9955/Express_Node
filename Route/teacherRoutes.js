@@ -8,5 +8,4 @@ route.get("/teacherInfo", (req, res)=>{
     res.send("<h1>THis is teacherInfo</h1>")
 })
 
-
 module.exports=route;

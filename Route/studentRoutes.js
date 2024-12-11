@@ -12,7 +12,7 @@ route.get("/fees", (req,res)=>{
 route.get("/class", (req,res)=>{
     res.send("<h1>This is class </h1>")
 })
-route.get("/name", (req,res)=>{
+route.get("/result", (req,res)=>{
     res.send("<h1>This is name </h1>")
 })
 

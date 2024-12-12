@@ -15,7 +15,6 @@ const stuResult=(req,res)=>{
 const stuFees=(req,res)=>{
     res.send("<h1>This is student fees page</h1>")
 }
-
 module.exports={
     stuHOme,
     stuSubject,

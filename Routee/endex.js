@@ -5,9 +5,9 @@ const express=require("express");
 
 const app=express();
 const port=8080;
-const studentRoutes=require("./Route/studentRoutes")
+const studentRoutes=require("../Route/studentRoutes")
 
-const teachers=require("./Route/teacherRoutes");
+const teachers=require("../Route/teacherRoutes");
 
 app.use("/students", studentRoutes)
 

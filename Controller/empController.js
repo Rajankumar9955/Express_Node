@@ -1,3 +1,5 @@
+const EmpControlller=require("../Model/empModel");
+
 const empHOme=(req,res)=>{
     res.render("Home")
 }

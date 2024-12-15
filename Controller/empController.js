@@ -1,18 +1,24 @@
-const EmpControlller=require("../Model/empModel");
 
-const empHOme=(req,res)=>{
+
+const empHome=(req,res)=>{
     res.render("Home")
 }
-const empAbout=(req,res)=>{
-    res.render("About")
+
+const empInsert=(req,res)=>{
+    res.render("Insert");
 }
 
-const empContact=(req,res)=>{
+const empDiplay=(req,res)=>{
+    res.render("Display")
+}
+
+const empContact=()=>{
     res.render("Contact")
 }
-
 module.exports={
-    empHOme,
-    empAbout,
+    empHome,
+    empInsert,
+    empDiplay,
     empContact
+
 }

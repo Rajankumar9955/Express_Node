@@ -15,6 +15,7 @@ const empDiplay=(req,res)=>{
 const empContact=(req,res)=>{
     res.render("Contact")
 }
+
 module.exports={
     empHome,
     empInsert,

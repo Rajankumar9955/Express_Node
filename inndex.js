@@ -42,7 +42,7 @@ const Port=8080;
 
 const mongoose=require("mongoose");
 const EmpRoute=require("./Rout/EmployeeRoutes");
-mongoose.connect("mongodb://127.0.0.1:27017/rajan").then(()=>{
+mongoose.connect("mongodb://localhost:27017/rajan").then(()=>{
     console.log("DB Connected!!");
 })
 

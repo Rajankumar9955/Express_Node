@@ -38,7 +38,7 @@ app.listen(port,()=>{
 
 const express=require("express");
 const app=express();
-const port=8000;
+const Port=8080;
 
 const mongoose=require("mongoose");
 const EmpRoute=require("./Rout/EmployeeRoutes");
@@ -49,6 +49,6 @@ mongoose.connect("mongodb://127.0.0.1:27017/rajan").then(()=>{
 app.set("view engine", "ejs");
 app.use("/", EmpRoute);
 
-app.listen(port, ()=>{
-    console.log(`server run on ${port}`);
+app.listen(Port, ()=>{
+    console.log(`server run on ${Port}`);
 })

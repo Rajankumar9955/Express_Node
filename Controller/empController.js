@@ -12,7 +12,7 @@ const empDiplay=(req,res)=>{
     res.render("Display")
 }
 
-const empContact=()=>{
+const empContact=(req,res)=>{
     res.render("Contact")
 }
 module.exports={

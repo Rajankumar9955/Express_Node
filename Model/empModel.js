@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 
-cosnt empSchema=new mongoose.Schema({
+const empSchema=new mongoose.Schema({
     empno:Number,
     name:String,
     city:String,

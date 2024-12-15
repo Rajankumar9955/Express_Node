@@ -1,4 +1,4 @@
-
+const EmpModel=require("../Model/empModel");
 
 const empHome=(req,res)=>{
     res.render("Home")

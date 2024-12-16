@@ -16,6 +16,10 @@ const empContact=(req,res)=>{
     res.render("Contact")
 }
 
+const studatasave=(req,res)=>{
+   const {eno,nm,ct,sal}=
+}
+
 module.exports={
     empHome,
     empInsert,

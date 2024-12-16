@@ -40,13 +40,22 @@ const express=require("express");
 const app=express();
 const Port=8080;
 
+const bodyParser=require("body-parser");
+
 const mongoose=require("mongoose");
 const EmpRoute=require("./Rout/EmployeeRoutes");
-mongoose.connect("mongodb://localhost:27017/rajan").then(()=>{
+const bodyParser = require("body-parser");
+mongoose.connect("mongodb://127.0.0.1:27017/rajan").then(()=>{
     console.log("DB Connected!!");
 })
 
 app.set("view engine", "ejs");
+
+// Body-parser middleware
+app.use(bodyParser.urlencoded({extended:true}))
+app.use(bodyParser.json())
+
+
 app.use("/", EmpRoute);
 
 app.listen(Port, ()=>{

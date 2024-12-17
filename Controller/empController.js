@@ -16,14 +16,22 @@ const empContact=(req,res)=>{
     res.render("Contact")
 }
 
-const studatasave=(req,res)=>{
-   const {eno,nm,ct,sal}=
+const studatasave=(req,res)=>{ 
+   const {eno,nm,ct,sal}=req.body;
+   EmpModel.create({
+    empno:eno,
+    name:nm,
+    city:ct,
+    salary:sal
+   })
+   res.render("Insert");
 }
 
 module.exports={
     empHome,
     empInsert,
     empDiplay,
-    empContact
+    empContact,
+    studatasave
 
 }
